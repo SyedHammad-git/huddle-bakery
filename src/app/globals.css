@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f7efe3;
+  color: #361312;
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+* {
+  scrollbar-color: #c89d54 #f7efe3;
+}
+
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: #f7efe3; }
+::-webkit-scrollbar-thumb { background: #c89d54; border-radius: 9999px; }
+
+.font-editorial { font-family: "Playfair Display", Georgia, serif; }
+.hero-copy-scrim {
+  background: linear-gradient(90deg, rgba(247,239,227,.96) 0%, rgba(247,239,227,.85) 45%, rgba(247,239,227,.2) 100%);
+}
+.reveal-up, .reveal-fade, .stagger-child {
+  opacity: 0;
+  transition: opacity 600ms cubic-bezier(.22,1,.36,1), transform 600ms cubic-bezier(.22,1,.36,1);
+}
+.reveal-up, .stagger-child { transform: translateY(24px); }
+.reveal-fade { transform: translateY(8px); }
+.reveal-up.is-visible, .reveal-fade.is-visible, .stagger-child.is-visible { opacity: 1; transform: translateY(0); }
+.hero-entrance { animation: heroEntrance 700ms cubic-bezier(.22,1,.36,1) both; }
+@keyframes heroEntrance { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes floatSlow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+.float-slow { animation: floatSlow 4s ease-in-out infinite; }
+.polished-card { transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease; }
+.polished-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200,157,84,.75);
+  box-shadow: 0 16px 34px rgba(54,19,18,.12), 0 0 0 1px rgba(200,157,84,.18);
+}
+.whatsapp-pulse { animation: whatsappPulse 2.4s ease-out infinite; }
+@keyframes whatsappPulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(37,211,102,.32); }
+  55% { box-shadow: 0 0 0 9px rgba(37,211,102,0); }
+}
+.reel-spinner {
+  width: 2rem; height: 2rem; border: 3px solid rgba(247,239,227,.35);
+  border-top-color: #c89d54; border-radius: 50%; animation: spin 800ms linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes bannerFade {
+  from { opacity: .55; }
+  to { opacity: 1; }
+}
+.banner-fade { animation: bannerFade 500ms ease both; }
+
+@media (max-width: 767px) {
+  .hero-copy-scrim { background: linear-gradient(180deg,rgba(247,239,227,.92) 0%,rgba(247,239,227,.82) 62%,rgba(247,239,227,.58) 100%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal-up, .reveal-fade, .stagger-child { opacity: 1; transform: none; }
+}

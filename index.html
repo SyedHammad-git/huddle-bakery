@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HUDDLE BAKERY | Baked Fresh. Shared Together.</title>
+<meta name="description" content="Handcrafted cakes, brownies, and dessert cups baked fresh daily by HUDDLE BAKERY. Order luxury treats for delivery in Faisalabad, Multan, and Kot Addu."/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="HUDDLE BAKERY | Baked Fresh. Shared Together."/>
+<meta property="og:description" content="Handcrafted cakes, brownies, and dessert cups baked fresh daily and delivered across Punjab."/>
+<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuAAoKy5HKKWaLl-UZGXQTYW0ehcxmkKA1eeLZ9KusE5T8MEq_FWkfO5zdfd_Og75P_A7dKcbAIm9M-zvBAJsPh2PvzsOSCMmQ95ZYgaYXXTG5DUnbDwdCPOYLa9ztU9x_jgGtFPBImpYy7iybnvmizqLeJMk9qHyBSQyUJG3mXz-NwGIpGNQdpLdx6XhSutFQjNWzim1VdQkBq-lI4tzwoa9_CwRhIYjoPGwFgGQ64"/>
+<meta property="og:image:alt" content="HUDDLE BAKERY handcrafted cakes and dessert cups"/>
+<meta name="theme-color" content="#361312"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#361312',
+            espressoDark: '#290c0b',
+            cream: '#F7EFE3',
+            creamLight: '#FBF7F0',
+            sandCard: '#EFE5D6',
+            sandHover: '#e7d9c6',
+            caramel: '#C89D54',
+            caramelDark: '#B8863B',
+            goldLight: '#E8D4B0',
+            borderWarm: '#E5D8C5',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'phone': '0 25px 60px -15px rgba(54, 19, 18, 0.4), 0 0 0 12px #1f1b1a',
+            'warm-soft': '0 10px 30px -5px rgba(54, 19, 18, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F7EFE3;
+      color: #361312;
+    }
+    .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F7EFE3;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C89D54;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B8863B;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .hero-copy-scrim {
+      background: linear-gradient(90deg, rgba(247,239,227,0.96) 0%, rgba(247,239,227,0.85) 45%, rgba(247,239,227,0.2) 100%);
+    }
+    .reveal-up, .reveal-fade, .stagger-child {
+      opacity: 0;
+      transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1), transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-up, .stagger-child { transform: translateY(24px); }
+    .reveal-fade { transform: translateY(8px); }
+    .reveal-up.is-visible, .reveal-fade.is-visible, .stagger-child.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-entrance {
+      animation: heroEntrance 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    @keyframes heroEntrance {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-7px); }
+    }
+    .float-slow { animation: floatSlow 4s ease-in-out infinite; }
+    .polished-card {
+      transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+    }
+    .polished-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(200, 157, 84, 0.75);
+      box-shadow: 0 16px 34px rgba(54, 19, 18, 0.12), 0 0 0 1px rgba(200, 157, 84, 0.18);
+    }
+    button, a[href] { transition: transform 160ms ease, color 180ms ease, background-color 180ms ease; }
+    button:active, a[href]:active { transform: scale(0.97); }
+    .menu-tab-btn { position: relative; }
+    .menu-tab-btn::after {
+      content: "";
+      position: absolute;
+      inset: -2px;
+      border: 1px solid rgba(200, 157, 84, 0.8);
+      border-radius: 9999px;
+      opacity: 0;
+      transform: scale(0.94);
+      transition: opacity 220ms ease, transform 220ms ease;
+      pointer-events: none;
+    }
+    .menu-tab-btn.active::after { opacity: 1; transform: scale(1); }
+    .whatsapp-pulse { animation: whatsappPulse 2.4s ease-out infinite; }
+    @keyframes whatsappPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.32); }
+      55% { box-shadow: 0 0 0 9px rgba(37, 211, 102, 0); }
+    }
+    #mobileNavDrawer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 300ms ease, opacity 220ms ease, padding 300ms ease;
+    }
+    #mobileNavDrawer.hidden { display: none; }
+    #mobileNavDrawer.is-open {
+      max-height: 26rem;
+      opacity: 1;
+    }
+    #mobileNavDrawer.is-closing { max-height: 0; opacity: 0; }
+    .reel-spinner {
+      width: 2rem;
+      height: 2rem;
+      border: 3px solid rgba(247, 239, 227, 0.35);
+      border-top-color: #C89D54;
+      border-radius: 50%;
+      animation: spin 800ms linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (max-width: 767px) {
+      .hero-copy-scrim {
+        background: linear-gradient(180deg, rgba(247,239,227,0.92) 0%, rgba(247,239,227,0.82) 62%, rgba(247,239,227,0.58) 100%);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .reveal-up, .reveal-fade, .stagger-child { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-cream text-espresso antialiased selection:bg-caramel selection:text-white min-h-screen flex flex-col">
+<!-- BEGIN: AnnouncementBar -->
+<div class="bg-[#290c0b] text-[#E8D4B0] text-xs py-1.5 px-4 text-center border-b border-[#441a18] flex items-center justify-center gap-3" data-purpose="top-announcement">
+<span class="inline-block w-2 h-2 rounded-full bg-caramel animate-pulse"></span>
+<span class="tracking-wide">Fresh Batches Baked Daily across Punjab • Delivery to <strong>Faisalabad, Multan &amp; Kot Addu</strong></span>
+<a class="hidden md:inline text-xs text-caramel hover:underline" href="https://wa.me/923417251879" rel="noopener noreferrer" target="_blank">| WhatsApp: 0341 7251879</a>
+</div>
+<!-- END: AnnouncementBar -->
+<!-- BEGIN: MainHeader -->
+<header class="bg-espresso text-white sticky top-0 z-40 shadow-md" data-purpose="site-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Monogram & Title -->
+<a class="flex items-center space-x-3 group" href="#hero">
+<div class="w-10 h-10 rounded-full border border-caramel/70 flex items-center justify-center bg-espressoDark text-caramel font-serif text-lg font-bold group-hover:scale-105 transition-transform shadow-inner">
+<span>H</span>
+</div>
+<div>
+<span class="font-serif tracking-widest text-lg sm:text-xl font-bold uppercase block leading-none text-white">HUDDLE BAKERY</span>
+<span class="text-[9px] tracking-[0.25em] text-caramel uppercase block mt-1 font-medium">Bakes • Sweets • Love</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-6 text-xs font-medium uppercase tracking-wider text-neutral-200">
+<a class="hover:text-caramel transition-colors" href="#hero">Home</a>
+<a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('sundaes')">Sundaes</a>
+<a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('brownies')">Brownies</a>
+<a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('cakes')">Cakes</a>
+<a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('deals')">Deals</a>
+<a class="hover:text-caramel transition-colors" href="#reels">Reels</a>
+<a class="hover:text-caramel transition-colors" href="#reviews">Reviews</a>
+<a class="hover:text-caramel transition-colors" href="#footer">Contact</a>
+</nav>
+<!-- Action Buttons & Drawer Trigger -->
+<div class="flex items-center space-x-3">
+<!-- Quick Drawer Cart Button -->
+<button aria-label="View order box" class="relative w-9 h-9 rounded-full bg-espressoDark border border-caramel/40 text-caramel hover:bg-caramel hover:text-espresso flex items-center justify-center transition-all" onclick="toggleMobileModal()" title="View Cart / Drawer">
+<i class="fa-solid fa-cart-shopping text-sm"></i>
+<span class="absolute -top-1 -right-1 bg-caramel text-espresso text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center border border-espresso" id="headerCartCount">1</span>
+</button>
+<!-- Order Now WhatsApp Pill -->
+<a class="whatsapp-pulse bg-caramel hover:bg-caramelDark text-espresso px-5 py-2 rounded-full font-serif font-semibold text-xs tracking-wider uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 inline-flex items-center gap-1.5" href="https://wa.me/923417251879?text=Hello%20Huddle%20Bakery!%20I%20would%20like%20to%20place%20an%20order." rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp text-sm"></i>
+<span>Order Now</span>
+</a>
+<!-- Mobile Hamburger Button -->
+<button aria-controls="mobileNavDrawer" aria-expanded="false" aria-label="Toggle navigation" class="lg:hidden text-neutral-200 hover:text-white p-2" onclick="toggleMobileNav()" type="button">
+<i class="fa-solid fa-bars text-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Dropdown Navigation -->
+<div class="hidden lg:hidden bg-espressoDark border-t border-white/10 px-4 py-4 space-y-2 text-sm text-neutral-200" id="mobileNavDrawer">
+<a class="block py-1 hover:text-caramel" href="#hero">Home</a>
+<a class="block py-1 hover:text-caramel" href="#menu" onclick="setMenuTab('sundaes')">Sundaes</a>
+<a class="block py-1 hover:text-caramel" href="#menu" onclick="setMenuTab('brownies')">Brownies</a>
+<a class="block py-1 hover:text-caramel" href="#menu" onclick="setMenuTab('cakes')">Cakes</a>
+<a class="block py-1 hover:text-caramel" href="#menu" onclick="setMenuTab('deals')">Exclusive Deals</a>
+<a class="block py-1 hover:text-caramel" href="#reels">Watch Reels</a>
+<a class="block py-1 hover:text-caramel" href="#reviews">Customer Reviews</a>
+<a class="block py-2 text-caramel font-semibold" href="https://wa.me/923417251879?text=Hello%20Huddle%20Bakery!%20I%20would%20like%20to%20place%20an%20order." rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp: 0341 7251879
+    </a>
+</div>
+</header>
+<button aria-label="Close navigation backdrop" class="fixed inset-0 z-30 hidden bg-espresso/35 opacity-0 transition-opacity duration-300 lg:hidden" id="mobileNavBackdrop" onclick="closeMobileNav()" type="button"></button>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow">
+<!-- BEGIN: HeroSection -->
+<section class="relative isolate flex min-h-[82vh] w-full items-center overflow-hidden bg-cream lg:min-h-[88vh]" data-purpose="hero-banner" id="hero">
+<img alt="" aria-hidden="true" class="absolute inset-0 h-full w-full object-cover object-center" fetchpriority="high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAoKy5HKKWaLl-UZGXQTYW0ehcxmkKA1eeLZ9KusE5T8MEq_FWkfO5zdfd_Og75P_A7dKcbAIm9M-zvBAJsPh2PvzsOSCMmQ95ZYgaYXXTG5DUnbDwdCPOYLa9ztU9x_jgGtFPBImpYy7iybnvmizqLeJMk9qHyBSQyUJG3mXz-NwGIpGNQdpLdx6XhSutFQjNWzim1VdQkBq-lI4tzwoa9_CwRhIYjoPGwFgGQ64"/>
+<div class="hero-copy-scrim absolute inset-0"></div>
+<div class="relative z-10 mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+<div class="max-w-3xl space-y-6 text-center lg:text-left">
+<div class="hero-entrance inline-flex items-center gap-2 rounded-full border border-borderWarm bg-sandCard/90 px-3 py-1 text-xs font-semibold tracking-wider text-espresso shadow-sm" style="animation-delay: 80ms">
+<span class="h-1.5 w-1.5 rounded-full bg-caramel"></span> Handcrafted Luxury Confections
+</div>
+<h1 class="hero-entrance font-editorial text-4xl font-bold leading-[1.12] tracking-tight text-espresso sm:text-5xl lg:text-7xl" style="animation-delay: 180ms">
+Baked Fresh.<br/><span class="italic font-normal text-caramelDark">Shared Together.</span>
+</h1>
+<p class="hero-entrance mx-auto max-w-xl text-base font-light leading-relaxed text-espresso/85 sm:text-lg lg:mx-0" style="animation-delay: 280ms">
+Our Signature Handcrafted Treats — Crafted daily with premium ingredients, delivered across Punjab.
+</p>
+<div class="hero-entrance flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start" style="animation-delay: 380ms">
+<a class="rounded-full bg-espresso px-7 py-3 text-xs font-semibold uppercase tracking-widest text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-espressoDark hover:shadow-lg active:scale-95" href="#menu">Shop Collection</a>
+<a class="rounded-full border border-espresso/40 bg-cream/50 px-7 py-3 text-xs font-semibold uppercase tracking-widest text-espresso transition-all duration-200 hover:bg-sandCard active:scale-95" href="#menu" onclick="setMenuTab('deals')">Explore Deals</a>
+</div>
+<div class="hero-entrance flex flex-wrap justify-center gap-2 border-t border-espresso/10 pt-6 text-xs font-medium text-espresso lg:justify-start" style="animation-delay: 480ms">
+<span class="rounded-full border border-borderWarm bg-sandCard/90 px-3 py-1.5">✨ 100% Fresh Daily</span>
+<span class="rounded-full border border-borderWarm bg-sandCard/90 px-3 py-1.5">📍 Faisalabad, Multan &amp; Kot Addu</span>
+<span class="rounded-full border border-borderWarm bg-sandCard/90 px-3 py-1.5">🍫 Pure Belgian Cocoa</span>
+</div>
+<div class="float-slow mx-auto inline-flex items-center gap-3 rounded-xl border border-white/10 bg-espresso/90 px-4 py-2.5 text-white shadow-lg backdrop-blur lg:mx-0">
+<div class="flex h-9 w-9 items-center justify-center rounded-full bg-caramel text-sm font-bold text-espresso">★</div>
+<div><p class="text-xs font-semibold leading-tight">Master Confectioners</p><p class="text-[10px] tracking-wide text-caramel">Faisalabad • Multan • Kot Addu</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: MenuSection (Sundaes, Brownies, Cakes & Deals) -->
+<section class="py-16 sm:py-20 bg-creamLight border-b border-borderWarm" data-purpose="product-menu" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Title -->
+<div class="text-center max-w-2xl mx-auto mb-10">
+<span class="text-xs uppercase tracking-[0.2em] text-caramelDark font-bold">Artisanal Selection</span>
+<h2 class="font-editorial text-3xl sm:text-4xl text-espresso font-bold mt-1">Our Signature Menu &amp; Deals</h2>
+<p class="text-espresso/70 text-sm mt-2 font-light">Freshly layered confections, baked daily and packaged in luxury boxes.</p>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center justify-center gap-2 sm:gap-4 overflow-x-auto pb-4 mb-8">
+<button class="menu-tab-btn active px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-espresso text-white shadow-sm" id="tabBtn-sundaes" onclick="setMenuTab('sundaes')">
+          🍨 Sundaes
+        </button>
+<button class="menu-tab-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-sandCard text-espresso hover:bg-sandHover border border-borderWarm" id="tabBtn-brownies" onclick="setMenuTab('brownies')">
+          🍫 Brownies
+        </button>
+<button class="menu-tab-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-sandCard text-espresso hover:bg-sandHover border border-borderWarm" id="tabBtn-cakes" onclick="setMenuTab('cakes')">
+          🎂 Cakes
+        </button>
+<button class="menu-tab-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-sandCard text-espresso hover:bg-sandHover border border-borderWarm" id="tabBtn-deals" onclick="setMenuTab('deals')">
+          🎁 Exclusive Deals
+        </button>
+</div>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="menuItemsGrid">
+<!-- Products populated via JS for seamless tab switching -->
+</div>
+</div>
+</section>
+<!-- END: MenuSection -->
+<!-- BEGIN: InstagramReelsSection -->
+<section class="py-16 sm:py-20 bg-cream border-b border-borderWarm" data-purpose="reels-showcase" id="reels">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+<div>
+<span class="text-xs uppercase tracking-[0.2em] text-caramelDark font-bold flex items-center gap-2">
+<i class="fa-brands fa-instagram text-base"></i> From Our Kitchen
+          </span>
+<h2 class="font-editorial text-3xl sm:text-4xl text-espresso font-bold mt-1">Watch Our Viral Reels</h2>
+<p class="text-espresso/70 text-sm mt-1 font-light">Behind the scenes: chocolate drizzling, velvety textures, and daily box packing.</p>
+</div>
+<a class="mt-4 md:mt-0 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-caramelDark hover:text-espresso transition-colors" href="https://www.instagram.com/___huddle_?knvt=ZjZxdGNjNGF5aTU=" rel="noopener noreferrer" target="_blank">
+<span>Follow @___huddle_</span>
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+</a>
+</div>
+<!-- 3 Reels Vertical Cards (9:16 aspect) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Reel 1 -->
+<div class="bg-sandCard rounded-3xl p-3 border border-borderWarm shadow-warm-soft hover:shadow-md transition-all group flex flex-col">
+<div class="relative rounded-2xl overflow-hidden aspect-[9/14] bg-espressoDark cursor-pointer" onclick="openReelModal('Fresh Ganache Drizzle &amp; Layering', 'Watch the handcrafted layering of our signature dessert cups with rich Belgian chocolate ganache.', 'https://www.instagram.com/reel/DcxYarNNEVw/', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk', 'https://www.instagram.com/reel/DcxYarNNEVw/embed')">
+<img alt="Ganache drizzle and dessert cup layering reel preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk"/>
+<!-- Overlay Play Button -->
+<div class="absolute inset-0 bg-espresso/30 flex items-center justify-center group-hover:bg-espresso/15 transition-all">
+<div class="w-14 h-14 rounded-full bg-caramel/90 text-espresso flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-lg ml-1"></i>
+</div>
+</div>
+<div class="absolute top-3 right-3 bg-espresso/80 backdrop-blur text-white text-[10px] px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+<i class="fa-brands fa-instagram text-caramel"></i> Reel
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold drop-shadow">
+<p class="line-clamp-1">Fresh Ganache Drizzle &amp; Layering</p>
+</div>
+</div>
+<div class="p-3 flex items-center justify-between mt-auto">
+<div>
+<p class="font-editorial text-sm font-bold text-espresso">Ganache &amp; Cup Layering</p>
+<p class="text-[11px] text-espresso/70">Signature Dessert Cup prep</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-cream flex items-center justify-center text-espresso hover:bg-caramel hover:text-white transition-colors" href="https://www.instagram.com/reel/DcxYarNNEVw/?fqnt=MTFobGhmaWhtcGhpdg==" rel="noopener noreferrer" target="_blank" title="Watch on Instagram">
+<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+</a>
+</div>
+</div>
+<!-- Reel 2 -->
+<div class="bg-sandCard rounded-3xl p-3 border border-borderWarm shadow-warm-soft hover:shadow-md transition-all group flex flex-col">
+<div class="relative rounded-2xl overflow-hidden aspect-[9/14] bg-espressoDark cursor-pointer" onclick="openReelModal('Baking Daily Batches &amp; Box Packaging', 'Step inside our kitchen as we pack fresh artisan brownie boxes and sundae combinations for same-day delivery.', 'https://www.instagram.com/p/DdHZF8CDX-s/', 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg', 'https://www.instagram.com/p/DdHZF8CDX-s/embed')">
+<img alt="Freshly packed brownie box reel preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg"/>
+<!-- Overlay Play Button -->
+<div class="absolute inset-0 bg-espresso/30 flex items-center justify-center group-hover:bg-espresso/15 transition-all">
+<div class="w-14 h-14 rounded-full bg-caramel/90 text-espresso flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-lg ml-1"></i>
+</div>
+</div>
+<div class="absolute top-3 right-3 bg-espresso/80 backdrop-blur text-white text-[10px] px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+<i class="fa-brands fa-instagram text-caramel"></i> Reel
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold drop-shadow">
+<p class="line-clamp-1">Daily Batches &amp; Box Packaging</p>
+</div>
+</div>
+<div class="p-3 flex items-center justify-between mt-auto">
+<div>
+<p class="font-editorial text-sm font-bold text-espresso">Box Packaging Process</p>
+<p class="text-[11px] text-espresso/70">Freshly packed for dispatch</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-cream flex items-center justify-center text-espresso hover:bg-caramel hover:text-white transition-colors" href="https://www.instagram.com/p/DdHZF8CDX-s/?img_index=5&amp;lqvp=YmhnNHAyZjl5Z2xh" rel="noopener noreferrer" target="_blank" title="Watch on Instagram">
+<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+</a>
+</div>
+</div>
+<!-- Reel 3 -->
+<div class="bg-sandCard rounded-3xl p-3 border border-borderWarm shadow-warm-soft hover:shadow-md transition-all group flex flex-col">
+<div class="relative rounded-2xl overflow-hidden aspect-[9/14] bg-espressoDark cursor-pointer" onclick="openReelModal('Signature Chocolate Cake Slicing &amp; Texture', 'Pure Belgian chocolate ganache meets moist cocoa sponge in this rich slice cut.', 'https://www.instagram.com/reel/DfPqBAzNhKm/', 'https://lh3.googleusercontent.com/aida-public/AB6AXuBDINIi_r0Vo9ELxaMCiujjlkwhBY3Z_7tIRhWnnkLzKyQISzBGpcFFqVkgYAn6DNc9w9oNVoFVGHBVm72BOAUUT6bqC8oTEXfiuG62pzTj7SG6eR7InyXhxQnJ10ZDnVd5TDT7l2E9fOk6oq1OM3V5jindiYvKMYcGEcMAZ0Llnkh3iHkDylqJito9YZntzmEScFnvcmSg4-OlUVmVSMq2qd88qpJTpayasXAJFsA', 'https://www.instagram.com/reel/DfPqBAzNhKm/embed')">
+<img alt="Signature chocolate cake slicing reel preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDINIi_r0Vo9ELxaMCiujjlkwhBY3Z_7tIRhWnnkLzKyQISzBGpcFFqVkgYAn6DNc9w9oNVoFVGHBVm72BOAUUT6bqC8oTEXfiuG62pzTj7SG6eR7InyXhxQnJ10ZDnVd5TDT7l2E9fOk6oq1OM3V5jindiYvKMYcGEcMAZ0Llnkh3iHkDylqJito9YZntzmEScFnvcmSg4-OlUVmVSMq2qd88qpJTpayasXAJFsA"/>
+<!-- Overlay Play Button -->
+<div class="absolute inset-0 bg-espresso/30 flex items-center justify-center group-hover:bg-espresso/15 transition-all">
+<div class="w-14 h-14 rounded-full bg-caramel/90 text-espresso flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<i class="fa-solid fa-play text-lg ml-1"></i>
+</div>
+</div>
+<div class="absolute top-3 right-3 bg-espresso/80 backdrop-blur text-white text-[10px] px-2.5 py-1 rounded-full font-medium flex items-center gap-1">
+<i class="fa-brands fa-instagram text-caramel"></i> Reel
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold drop-shadow">
+<p class="line-clamp-1">Signature Cake Slicing</p>
+</div>
+</div>
+<div class="p-3 flex items-center justify-between mt-auto">
+<div>
+<p class="font-editorial text-sm font-bold text-espresso">Cake Slicing &amp; Texture</p>
+<p class="text-[11px] text-espresso/70">Rich Belgian chocolate sponge</p>
+</div>
+<a class="w-8 h-8 rounded-full bg-cream flex items-center justify-center text-espresso hover:bg-caramel hover:text-white transition-colors" href="https://www.instagram.com/reel/DfPqBAzNhKm/?evlk=MTVlYzNtdHFjMTFqMg==" rel="noopener noreferrer" target="_blank" title="Watch on Instagram">
+<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: InstagramReelsSection -->
+<!-- BEGIN: WhyHuddleSection -->
+<section class="py-14 sm:py-16 bg-cream border-b border-borderWarm text-center" data-purpose="brand-story" id="why-huddle">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="flex items-center justify-center gap-6 mb-3">
+<div class="flex items-center gap-2 text-caramel text-xs tracking-wider uppercase font-semibold">
+<i class="fa-solid fa-wheat-awn text-lg"></i>
+<span>Baking Daily</span>
+</div>
+<span class="w-1.5 h-1.5 rounded-full bg-caramel"></span>
+<div class="flex items-center gap-2 text-caramel text-xs tracking-wider uppercase font-semibold">
+<i class="fa-solid fa-box-open text-lg"></i>
+<span>Artisan Boxes</span>
+</div>
+</div>
+<h2 class="font-editorial text-3xl sm:text-4xl font-bold text-espresso tracking-tight">Why Huddle?</h2>
+<p class="mt-4 text-espresso/80 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-light">
+        Our signature handcrafted treats are baked fresh daily using pure farm butter, authentic Belgian cocoa, and artisanal precision. From our oven to your doorstep across Punjab.
+      </p>
+<!-- City Tags & Guarantees -->
+<div class="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs text-espresso font-medium" id="locations">
+<span class="bg-sandCard border border-borderWarm px-3.5 py-1.5 rounded-full">📍 Faisalabad</span>
+<span class="bg-sandCard border border-borderWarm px-3.5 py-1.5 rounded-full">📍 Multan</span>
+<span class="bg-sandCard border border-borderWarm px-3.5 py-1.5 rounded-full">📍 Kot Addu</span>
+<span class="bg-caramel/20 text-caramelDark border border-caramel/40 px-3.5 py-1.5 rounded-full font-semibold">⚡ Same-Day Delivery</span>
+</div>
+</div>
+</section>
+<!-- END: WhyHuddleSection -->
+<!-- BEGIN: CustomerReviewsSection -->
+<section class="py-16 sm:py-20 bg-creamLight border-b border-borderWarm" data-purpose="customer-reviews" id="reviews">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="text-xs uppercase tracking-[0.2em] text-caramelDark font-bold">Loved Across Punjab</span>
+<h2 class="font-editorial text-3xl sm:text-4xl text-espresso font-bold mt-1">Customer Reviews</h2>
+<p class="text-espresso/70 text-sm mt-2 font-light">Hear what dessert lovers in Faisalabad, Multan, and Kot Addu have to say.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="bg-sandCard rounded-2xl p-6 border border-borderWarm shadow-warm-soft flex flex-col justify-between">
+<div>
+<div class="flex items-center text-caramel gap-1 mb-3 text-sm">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-xs sm:text-sm text-espresso/90 italic leading-relaxed">
+              "The Layered Chocolate Sundae Cups are completely unmatched! Rich chocolate ganache with velvety cream. Arrived chilled and spotless in Faisalabad."
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-espresso/10 flex items-center justify-between">
+<div>
+<h4 class="font-serif font-bold text-xs text-espresso">Ayesha Noor</h4>
+<p class="text-[10px] text-espresso/60">Verified Customer</p>
+</div>
+<span class="text-[10px] font-semibold bg-white/70 px-2.5 py-1 rounded-full text-caramelDark">📍 Faisalabad</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-sandCard rounded-2xl p-6 border border-borderWarm shadow-warm-soft flex flex-col justify-between">
+<div>
+<div class="flex items-center text-caramel gap-1 mb-3 text-sm">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-xs sm:text-sm text-espresso/90 italic leading-relaxed">
+              "Ordered the box of 6 Fudgy Brownies for my family. Incredibly moist, gooey center, and authentic cocoa flavor. WhatsApp ordering was effortless."
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-espresso/10 flex items-center justify-between">
+<div>
+<h4 class="font-serif font-bold text-xs text-espresso">Hamza Tariq</h4>
+<p class="text-[10px] text-espresso/60">Verified Customer</p>
+</div>
+<span class="text-[10px] font-semibold bg-white/70 px-2.5 py-1 rounded-full text-caramelDark">📍 Multan</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-sandCard rounded-2xl p-6 border border-borderWarm shadow-warm-soft flex flex-col justify-between">
+<div>
+<div class="flex items-center text-caramel gap-1 mb-3 text-sm">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</div>
+<p class="text-xs sm:text-sm text-espresso/90 italic leading-relaxed">
+              "We ordered the Signature Ganache Cake for my sister's birthday in Kot Addu. The presentation was divine and the taste was pure luxury."
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-espresso/10 flex items-center justify-between">
+<div>
+<h4 class="font-serif font-bold text-xs text-espresso">Zainab Raza</h4>
+<p class="text-[10px] text-espresso/60">Verified Customer</p>
+</div>
+<span class="text-[10px] font-semibold bg-white/70 px-2.5 py-1 rounded-full text-caramelDark">📍 Kot Addu</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: CustomerReviewsSection -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-espresso text-neutral-300 pt-16 pb-12 border-t border-espressoDark" data-purpose="site-footer" id="footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+<!-- Column 1: Brand Info -->
+<div class="space-y-4">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-full border border-caramel flex items-center justify-center bg-espressoDark text-caramel font-serif text-lg font-bold">
+            H
+          </div>
+<div>
+<span class="font-serif tracking-widest text-lg font-bold text-white uppercase block leading-none">HUDDLE BAKERY</span>
+<span class="text-[9px] tracking-widest text-caramel uppercase block mt-1">Baked Fresh • Shared Together</span>
+</div>
+</div>
+<p class="text-xs text-neutral-400 leading-relaxed">
+          Crafting memorable dessert experiences with love, passion, and premium ingredients across Punjab, Pakistan.
+        </p>
+</div>
+<!-- Column 2: Shop Menu -->
+<div class="space-y-3">
+<h4 class="font-serif text-white text-sm font-semibold uppercase tracking-wider">Menu</h4>
+<ul class="space-y-2 text-xs text-neutral-400">
+<li><a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('sundaes')">Sundaes</a></li>
+<li><a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('brownies')">Brownies</a></li>
+<li><a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('cakes')">Cakes</a></li>
+<li><a class="hover:text-caramel transition-colors" href="#menu" onclick="setMenuTab('deals')">Deals &amp; Bundles</a></li>
+<li><a class="hover:text-caramel transition-colors" href="#reels">Watch Reels</a></li>
+</ul>
+</div>
+<!-- Column 3: Support & Contact -->
+<div class="space-y-3">
+<h4 class="font-serif text-white text-sm font-semibold uppercase tracking-wider">Delivery &amp; Contact</h4>
+<ul class="space-y-2 text-xs text-neutral-400">
+<li>Faisalabad • Multan • Kot Addu</li>
+<li>Same-Day Fast Express Dispatch</li>
+<li class="pt-2">
+<a class="inline-flex items-center gap-1.5 text-caramel font-semibold hover:underline" href="https://wa.me/923417251879?text=Hello%20Huddle%20Bakery!%20I%20would%20like%20to%20place%20an%20order." rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp: 0341 7251879
+            </a>
+</li>
+</ul>
+</div>
+<!-- Column 4: Follow & Social -->
+<div class="space-y-4">
+<h4 class="font-serif text-white text-sm font-semibold uppercase tracking-wider">Follow Us</h4>
+<div class="flex items-center space-x-3 text-lg">
+<a class="w-9 h-9 rounded-full bg-[#290c0b] border border-white/10 flex items-center justify-center text-caramel hover:bg-caramel hover:text-espresso transition-all" href="https://www.instagram.com/___huddle_?knvt=ZjZxdGNjNGF5aTU=" rel="noopener noreferrer" target="_blank" title="Instagram">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a class="w-9 h-9 rounded-full bg-[#290c0b] border border-white/10 flex items-center justify-center text-caramel hover:bg-caramel hover:text-espresso transition-all" href="https://www.facebook.com/share/19hBa5XXpD/" rel="noopener noreferrer" target="_blank" title="Facebook">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+<a class="w-9 h-9 rounded-full bg-[#290c0b] border border-white/10 flex items-center justify-center text-caramel hover:bg-caramel hover:text-espresso transition-all" href="https://www.tiktok.com/@hoor.fatima836?_r=1&amp;_t=ZS-9BZ7cXFXCfk" rel="noopener noreferrer" target="_blank" title="TikTok">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+<a class="w-9 h-9 rounded-full bg-[#290c0b] border border-white/10 flex items-center justify-center text-caramel hover:bg-caramel hover:text-espresso transition-all" href="https://wa.me/923417251879?text=Hello%20Huddle%20Bakery!%20I%20would%20like%20to%20place%20an%20order." rel="noopener noreferrer" target="_blank" title="WhatsApp Direct">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+</div>
+<p class="text-[11px] text-neutral-400">Order directly via WhatsApp for swift delivery in Punjab.</p>
+</div>
+</div>
+<!-- Copyright Bar -->
+<div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500">
+<p>© <span id="currentYear">2026</span> HUDDLE BAKERY. All rights reserved.</p>
+<p class="mt-2 sm:mt-0">Faisalabad • Multan • Kot Addu, Punjab</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveMobileDrawerModal -->
+<div aria-hidden="true" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-3 transition-opacity duration-300 opacity-0 pointer-events-none" id="mobileProductModal">
+<!-- Phone Mockup Container Frame -->
+<div aria-labelledby="drawerProductName" aria-modal="true" class="relative w-full max-w-[390px] max-h-[92vh] bg-[#1a1716] rounded-[42px] p-2.5 shadow-phone border-[4px] border-[#2d2826] flex flex-col overflow-hidden" role="dialog">
+<!-- Phone Notch -->
+<div class="w-24 h-4 bg-black rounded-b-xl mx-auto mb-1"></div>
+<!-- Inside Screen Container -->
+<div class="relative flex-1 bg-cream rounded-[34px] overflow-y-auto overflow-x-hidden flex flex-col justify-between scrollbar-none border border-borderWarm">
+<!-- Phone Header -->
+<div class="bg-espresso text-white px-4 py-3 flex items-center justify-between sticky top-0 z-20">
+<button class="w-7 h-7 rounded-full flex items-center justify-center hover:bg-white/10 text-white text-xs" onclick="toggleMobileModal()">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+<div class="flex items-center space-x-1.5">
+<div class="w-5 h-5 rounded-full border border-caramel flex items-center justify-center text-[10px] text-caramel font-serif">H</div>
+<span class="font-serif text-[11px] tracking-wider uppercase font-bold">HUDDLE BAKERY</span>
+</div>
+<a class="w-7 h-7 rounded-full flex items-center justify-center hover:bg-white/10 text-caramel text-xs" href="https://wa.me/923417251879" rel="noopener noreferrer" target="_blank">
+<i class="fa-solid fa-cart-shopping"></i>
+</a>
+</div>
+<!-- Phone Body -->
+<div class="p-4 space-y-4">
+<!-- Product Image -->
+<div class="rounded-2xl overflow-hidden shadow-sm bg-sandCard aspect-square border border-borderWarm">
+<img alt="Product Preview" class="w-full h-full object-cover" id="drawerProductImage" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk"/>
+</div>
+<!-- Product Title, Price & Bestseller Badge -->
+<div class="text-center space-y-1">
+<h3 class="font-editorial text-xl font-bold text-espresso leading-snug" id="drawerProductName">
+            Layered Chocolate Dessert Cup
+          </h3>
+<p class="text-xs text-espresso/80">
+<span id="drawerUnitPrice">Rs 650</span> — Per Unit
+          </p>
+<div class="pt-1">
+<span class="inline-block bg-caramel text-espresso text-[10px] uppercase font-bold px-3 py-0.5 rounded-full shadow-sm" id="drawerBadge">
+              BESTSELLER
+            </span>
+</div>
+</div>
+<!-- Quantity Stepper & Subtotal Row -->
+<div class="bg-sandCard/80 rounded-xl p-3 border border-borderWarm flex items-center justify-between">
+<div class="text-left">
+<span class="text-xs font-semibold text-espresso block">Quantity</span>
+<span class="text-[10px] text-espresso/70">Selected units</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center bg-cream rounded-full border border-borderWarm px-2 py-1">
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-espresso hover:bg-sandCard font-bold text-xs" onclick="changeQuantity(-1)" type="button">
+                -
+              </button>
+<span class="w-7 text-center font-bold text-xs text-espresso" id="quantityCount">1</span>
+<button class="w-5 h-5 rounded-full flex items-center justify-center text-espresso hover:bg-sandCard font-bold text-xs" onclick="changeQuantity(1)" type="button">
+                +
+              </button>
+</div>
+<div class="text-right">
+<span class="font-bold text-sm text-espresso" id="calculatedTotal">Rs 650</span>
+</div>
+</div>
+</div>
+<!-- Delivery Strip -->
+<div class="bg-creamLight border border-borderWarm rounded-xl p-2.5 flex items-center justify-between gap-2 text-[11px] text-espresso">
+<label class="inline-flex items-center gap-2" for="deliveryCity"><i class="fa-solid fa-location-dot text-caramel text-xs"></i><span>Delivery city</span></label>
+<select class="max-w-[58%] rounded-lg border-borderWarm bg-white px-2 py-1 text-[11px] font-semibold text-espresso focus:border-caramel focus:ring-caramel" id="deliveryCity" name="deliveryCity">
+<option>Faisalabad</option><option>Multan</option><option>Kot Addu</option>
+</select>
+</div>
+<!-- Description Box -->
+<div class="text-center space-y-1.5 pt-1">
+<h4 class="font-editorial font-bold text-sm text-espresso">Description</h4>
+<p class="text-[11px] text-espresso/80 leading-relaxed font-light" id="drawerDescription">
+            Delicious layered dessert cup with rich chocolate and creamy vanilla layers, topped with silky chocolate ganache and chocolate shavings. Made fresh daily with premium ingredients.
+          </p>
+</div>
+<!-- Trust Badges (Row of 3) -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-borderWarm text-center">
+<div class="p-1">
+<i class="fa-solid fa-cookie-bite text-caramel text-xs mb-0.5"></i>
+<p class="text-[9px] font-semibold text-espresso uppercase leading-tight">Made Fresh Daily</p>
+</div>
+<div class="p-1">
+<i class="fa-solid fa-truck-fast text-caramel text-xs mb-0.5"></i>
+<p class="text-[9px] font-semibold text-espresso uppercase leading-tight">Same-Day Delivery</p>
+</div>
+<div class="p-1">
+<i class="fa-solid fa-award text-caramel text-xs mb-0.5"></i>
+<p class="text-[9px] font-semibold text-espresso uppercase leading-tight">Premium Ingredients</p>
+</div>
+</div>
+<!-- Buy Now on WhatsApp Action Button -->
+<div class="pt-2">
+<button class="whatsapp-pulse w-full bg-caramel hover:bg-caramelDark text-espresso font-semibold text-xs tracking-wider uppercase py-3 rounded-full shadow-md transition-all flex items-center justify-center gap-2 active:scale-95" onclick="orderViaWhatsApp()">
+<i class="fa-brands fa-whatsapp text-sm"></i>
+<span>Buy Now on WhatsApp</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</button>
+</div>
+<!-- Delivery & WhatsApp Direct Note -->
+<div class="bg-sandCard rounded-xl p-2 text-center border border-borderWarm">
+<a class="text-[10px] text-caramelDark font-bold hover:underline block" href="https://wa.me/923417251879" rel="noopener noreferrer" target="_blank">
+            Order via WhatsApp for fastest express dispatch
+          </a>
+</div>
+</div>
+<!-- Phone Home Bar -->
+<div class="p-2 flex justify-center">
+<div class="w-24 h-1 bg-espresso/30 rounded-full"></div>
+</div>
+</div>
+<!-- Close Floating Button -->
+<button aria-label="Close order modal" class="absolute top-4 right-4 bg-espresso text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-espressoDark text-sm" onclick="toggleMobileModal()">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+</div>
+<!-- END: InteractiveMobileDrawerModal -->
+<!-- BEGIN: VideoReelModal -->
+<div aria-hidden="true" class="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4 transition-opacity duration-300 opacity-0 pointer-events-none" id="reelModal">
+<div aria-labelledby="reelModalTitle" aria-modal="true" class="relative w-full max-w-md max-h-[95vh] overflow-y-auto bg-espresso rounded-3xl p-5 border border-caramel/40 text-cream shadow-2xl flex flex-col space-y-4" role="dialog">
+<div class="flex items-center justify-between border-b border-white/10 pb-3">
+<div class="flex items-center gap-2">
+<i class="fa-brands fa-instagram text-caramel text-lg"></i>
+<h3 class="font-serif font-bold text-sm text-white" id="reelModalTitle">Instagram Reel</h3>
+</div>
+<button aria-label="Close reel modal" class="text-neutral-400 hover:text-white" onclick="toggleReelModal()">
+<i class="fa-solid fa-xmark text-lg"></i>
+</button>
+</div>
+<div class="relative mx-auto w-full max-w-[360px] overflow-hidden rounded-2xl bg-espressoDark border border-white/10 aspect-[9/14] max-h-[60vh]">
+<div aria-label="Loading Instagram reel" class="absolute inset-0 flex items-center justify-center" id="reelLoading"><span class="reel-spinner"></span></div>
+<iframe allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" class="relative z-10 h-full w-full border-0" id="reelEmbed" loading="eager" title="Instagram reel" src="" style="opacity:0"></iframe>
+</div>
+<p class="text-xs text-cream/90 leading-relaxed" id="reelModalCaption"></p>
+<div class="flex items-center gap-3 pt-2">
+<a class="flex-1 bg-caramel hover:bg-caramelDark text-espresso py-2.5 rounded-full text-center text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center gap-2" href="#" id="reelModalLink" rel="noopener noreferrer" target="_blank">
+<i class="fa-brands fa-instagram text-sm"></i>
+<span>Watch on Instagram</span>
+</a>
+<button class="px-4 py-2.5 border border-white/20 hover:bg-white/10 rounded-full text-xs font-semibold text-white transition-all" onclick="toggleReelModal()">
+        Close
+      </button>
+</div>
+</div>
+</div>
+<!-- END: VideoReelModal -->
+<a aria-label="Order on WhatsApp" class="group whatsapp-pulse fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-105 active:scale-95 sm:bottom-7 sm:right-7" href="https://wa.me/923417251879?text=Hello%20Huddle%20Bakery!%20I%20would%20like%20to%20place%20an%20order." rel="noopener noreferrer" target="_blank" title="Order on WhatsApp">
+<i class="fa-brands fa-whatsapp text-2xl"></i><span class="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-lg bg-espresso px-3 py-2 text-xs font-semibold text-white opacity-0 shadow-lg transition-opacity group-hover:opacity-100">Order on WhatsApp</span>
+</a>
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="cart-and-menu-data">
+  const menuData = {
+    sundaes: [
+      {
+        name: "Layered Chocolate Sundae Cup",
+        price: 650,
+        badge: "BESTSELLER",
+        desc: "Belgian ganache layered with moist sponge and velvety chocolate cream.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBcR7vaNodQsjxqfD_-tjnhEgpK3kRzah1245ZZYNOpRhuPgqy9Ju73FY-8N1235j71Zc0OXB5pVDSDYJZ59SYVjQ74HCl0CvU1hGAizVYJdYTXsknzdXexzf51BzPb0-2k1MBQAdN8cEuOotfHA6p-ZuqNfZy4hqGtkf_vqvyh7aMx3Dd5uC9CFjLa3sMhz1SSa4wrMRN2RU9yWauHw_0lBkEgNkMmWaTAv1zmX7s"
+      },
+      {
+        name: "Lotus Biscoff Sundae",
+        price: 720,
+        badge: "POPULAR",
+        desc: "Caramelized Biscoff spread, crunchy biscuit crumbs, and vanilla custard.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDgweHiHYPMG6jeP5uqxKUAzACUf4i5XAf77-xmDHS7Zhd989DWLIIx-nRHJ-fKk4YXoZgeBri2puU6iVpHg4eigEb1llUW_D6j449p2K4xY_zrTWfQmqrHQBJVjBdchWyWHWxLln2a12Vt26A1rfmaRrb8rTdMNPcNeFxGGs91RnNlxixm5YvppTg_i46aFmbjlLZ7cWR4OVxokEMGejX0Z__Zba5T-l2odyVRqPE"
+      },
+      {
+        name: "Pistachio Cream Sundae",
+        price: 750,
+        badge: "NEW",
+        desc: "Authentic pistachio paste infused with light whipped mascarpone cream.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDPb1AGb-YVKwqjmV2o7dIOsfQLHIXN9NEyKm_6c3EV6-t4cS6q2CBYAI14DI_ESXbCAkDMJjch5yMiivSAI0TJi6Sc2NUddFdmh-tmXevS8Ui740kVT6WhGHZnx8EZS2N1y9CKBrg_0zCTUCRRQuULD3nn5k755Z393XjRekFtsfC38_cYqU1QnSBIeSvHhrVaR4qYmtwQbzhLKHaP03NMZxKA0pLlG8JmAQ5xmmU"
+      },
+      {
+        name: "Nutella Fudge Sundae",
+        price: 680,
+        badge: "FAVORITE",
+        desc: "Decadent hazelnut chocolate swirl with fudge brownie bits and cream.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk"
+      }
+    ],
+    brownies: [
+      {
+        name: "Fudgy Chocolate Brownie",
+        price: 250,
+        badge: "BESTSELLER",
+        desc: "Rs 250 / pc — Box of 6: Rs 1,400. Deep Belgian cocoa, chewy crinkle top.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg"
+      },
+      {
+        name: "Walnut & Dark Choc Brownie",
+        price: 280,
+        badge: "CLASSIC",
+        desc: "Roasted Californian walnuts tossed into intense 70% dark chocolate batter.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg"
+      },
+      {
+        name: "Triple Chocolate Lava Brownie",
+        price: 320,
+        badge: "NEW",
+        desc: "Filled with molten milk and dark chocolate center that melts when warmed.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg"
+      }
+    ],
+    cakes: [
+      {
+        name: "Signature Chocolate Ganache Cake",
+        price: 2850,
+        badge: "SIGNATURE",
+        desc: "1kg handcrafted celebration cake layered with silky Belgian chocolate ganache.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBDINIi_r0Vo9ELxaMCiujjlkwhBY3Z_7tIRhWnnkLzKyQISzBGpcFFqVkgYAn6DNc9w9oNVoFVGHBVm72BOAUUT6bqC8oTEXfiuG62pzTj7SG6eR7InyXhxQnJ10ZDnVd5TDT7l2E9fOk6oq1OM3V5jindiYvKMYcGEcMAZ0Llnkh3iHkDylqJito9YZntzmEScFnvcmSg4-OlUVmVSMq2qd88qpJTpayasXAJFsA"
+      },
+      {
+        name: "Belgian Fudge Cake",
+        price: 3100,
+        badge: "PREMIUM",
+        desc: "1kg rich fudge layers, coated with smooth cocoa glaze and dark chocolate shavings.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAoKy5HKKWaLl-UZGXQTYW0ehcxmkKA1eeLZ9KusE5T8MEq_FWkfO5zdfd_Og75P_A7dKcbAIm9M-zvBAJsPh2PvzsOSCMmQ95ZYgaYXXTG5DUnbDwdCPOYLa9ztU9x_jgGtFPBImpYy7iybnvmizqLeJMk9qHyBSQyUJG3mXz-NwGIpGNQdpLdx6XhSutFQjNWzim1VdQkBq-lI4tzwoa9_CwRhIYjoPGwFgGQ64"
+      },
+      {
+        name: "Red Velvet Cream Cake",
+        price: 2750,
+        badge: "POPULAR",
+        desc: "1kg fluffy red velvet sponge finished with tangy Philadelphia cream cheese frosting.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBDINIi_r0Vo9ELxaMCiujjlkwhBY3Z_7tIRhWnnkLzKyQISzBGpcFFqVkgYAn6DNc9w9oNVoFVGHBVm72BOAUUT6bqC8oTEXfiuG62pzTj7SG6eR7InyXhxQnJ10ZDnVd5TDT7l2E9fOk6oq1OM3V5jindiYvKMYcGEcMAZ0Llnkh3iHkDylqJito9YZntzmEScFnvcmSg4-OlUVmVSMq2qd88qpJTpayasXAJFsA"
+      }
+    ],
+    deals: [
+      {
+        name: "Huddle Sweet Box Deal",
+        price: 1650,
+        badge: "SAVE RS 200",
+        desc: "Includes 2 Layered Chocolate Sundaes + 2 Fudgy Chocolate Brownies in a gift box.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk"
+      },
+      {
+        name: "Family Feast Celebration Deal",
+        price: 4950,
+        badge: "BEST VALUE",
+        desc: "1 Signature Chocolate Cake (1kg) + 4 Assorted Sundae Cups for special gatherings.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAAoKy5HKKWaLl-UZGXQTYW0ehcxmkKA1eeLZ9KusE5T8MEq_FWkfO5zdfd_Og75P_A7dKcbAIm9M-zvBAJsPh2PvzsOSCMmQ95ZYgaYXXTG5DUnbDwdCPOYLa9ztU9x_jgGtFPBImpYy7iybnvmizqLeJMk9qHyBSQyUJG3mXz-NwGIpGNQdpLdx6XhSutFQjNWzim1VdQkBq-lI4tzwoa9_CwRhIYjoPGwFgGQ64"
+      },
+      {
+        name: "Duo Craving Deal",
+        price: 1050,
+        badge: "DEAL",
+        desc: "2 Fudgy Brownies + 1 Premium Layered Sundae Cup. Perfect evening indulgence.",
+        img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ci24DQADFhZkPIsPES4qgpOK8UAszKo-HDqik3LFbpK12G76B-mU7VUO8iD4Z3IzvjplYCg7E0ej6ZqiqxbbqKYQMi_oaaE0VNFrlYyPLvM8czm2duIY6GJYtx6-empGhk6Ck6Kov8hESaslLyj-OWENCl4foNl7a6kPu77LWzvtJFWFoIkgZhMz8TyaQAdIXFStakdFFN_LoxXum5PS9cJx9-y-lyWacxWrsqg"
+      }
+    ]
+  };
+
+  let currentProduct = {
+    name: "Layered Chocolate Dessert Cup",
+    unitPrice: 650,
+    quantity: 1,
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBiWP6SALojSkhkQzFJG-TFurq8dycIBuzk9AimDrm449vOYvOyjAw8FgRNiZMCD2KfF3bJqOhCmlIJTchLa644AUTCjt2Dw5UxD2Ur0GPFsDH-X2cY_E1geAf98c34sLjd3hdECFIcKmnuGl4M3pL1uNmkWhkWRcStpXLieiYw1nCJDxecy5X8g2H2mzUFyJws-YCVQe1kizh-S61y8R2edyP4jz6CGgEvJBd15Sk",
+    badge: "BESTSELLER",
+    desc: "Delicious layered dessert cup with rich chocolate and creamy vanilla layers, topped with silky chocolate ganache and chocolate shavings."
+  };
+
+  let revealObserver = null;
+
+  function observeReveals(root) {
+    const revealItems = root.querySelectorAll('.reveal-up, .reveal-fade, .stagger-child');
+    revealItems.forEach((element, index) => {
+      if (element.dataset.revealObserved) return;
+      element.dataset.revealObserved = 'true';
+      if (!revealObserver) {
+        element.classList.add('is-visible');
+        return;
+      }
+      if (element.classList.contains('stagger-child')) {
+        element.style.transitionDelay = `${Math.min(index * 70, 350)}ms`;
+      }
+      revealObserver.observe(element);
+    });
+  }
+
+  function setMenuTab(category) {
+    document.querySelectorAll('.menu-tab-btn').forEach(btn => {
+      btn.className = "menu-tab-btn px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-sandCard text-espresso hover:bg-sandHover border border-borderWarm";
+      btn.setAttribute('aria-pressed', 'false');
+    });
+    const activeBtn = document.getElementById('tabBtn-' + category);
+    if (activeBtn) {
+      activeBtn.className = "menu-tab-btn active px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all bg-espresso text-white shadow-sm";
+      activeBtn.setAttribute('aria-pressed', 'true');
+    }
+
+    const items = menuData[category] || [];
+    const container = document.getElementById('menuItemsGrid');
+    container.innerHTML = items.map(item => `
+      <article class="stagger-child polished-card bg-sandCard rounded-2xl p-4 border border-borderWarm flex flex-col justify-between group">
+        <div>
+          <div class="relative rounded-xl overflow-hidden aspect-square bg-espresso/5 mb-3">
+            <span class="absolute top-2 left-2 bg-espresso text-caramel text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded shadow z-10">${item.badge}</span>
+            <img alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="${item.img}"/>
+          </div>
+          <h3 class="font-editorial text-base font-bold text-espresso line-clamp-1">${item.name}</h3>
+          <p class="text-[11px] text-espresso/70 mt-1 line-clamp-2 leading-snug">${item.desc}</p>
+          <p class="text-sm font-bold text-espresso mt-2">Rs ${item.price.toLocaleString()}</p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 mt-4 pt-2 border-t border-espresso/10">
+          <button class="bg-espresso hover:bg-espressoDark text-white text-[11px] font-semibold py-2 rounded-lg tracking-wider uppercase transition-colors active:scale-95" onclick="openProductDrawer('${item.name.replace(/'/g, "\\'")}', ${item.price}, '${item.img}', '${item.badge}', '${item.desc.replace(/'/g, "\\'")}')" type="button">Add to Box</button>
+          <a class="bg-caramel hover:bg-caramelDark text-espresso text-[11px] font-bold py-2 rounded-lg tracking-wider uppercase text-center transition-colors flex items-center justify-center gap-1 active:scale-95" href="https://wa.me/923417251879?text=${encodeURIComponent('Hello Huddle Bakery! I want to instantly order: ' + item.name + ' (Rs ' + item.price + ')')}" rel="noopener noreferrer" target="_blank">Buy Now</a>
+        </div>
+      </article>
+    `).join('');
+    observeReveals(container);
+  }
+
+  function updateDrawerDisplay() {
+    document.getElementById('drawerProductName').textContent = currentProduct.name;
+    document.getElementById('drawerUnitPrice').textContent = "Rs " + currentProduct.unitPrice.toLocaleString();
+    document.getElementById('quantityCount').textContent = currentProduct.quantity;
+    document.getElementById('calculatedTotal').textContent = "Rs " + (currentProduct.unitPrice * currentProduct.quantity).toLocaleString();
+    document.getElementById('headerCartCount').textContent = currentProduct.quantity;
+
+    const imgElem = document.getElementById('drawerProductImage');
+    if (imgElem && currentProduct.image) {
+      imgElem.src = currentProduct.image;
+      imgElem.alt = currentProduct.name;
+    }
+    const badgeElem = document.getElementById('drawerBadge');
+    if (badgeElem) badgeElem.textContent = currentProduct.badge || 'HUDDLE SPECIAL';
+    const descElem = document.getElementById('drawerDescription');
+    if (descElem && currentProduct.desc) descElem.textContent = currentProduct.desc;
+  }
+
+  function syncPageScrollLock() {
+    const productOpen = !document.getElementById('mobileProductModal').classList.contains('pointer-events-none');
+    const reelOpen = !document.getElementById('reelModal').classList.contains('pointer-events-none');
+    document.body.style.overflow = productOpen || reelOpen ? 'hidden' : '';
+  }
+
+  function setModalOpen(modal, isOpen) {
+    modal.classList.toggle('pointer-events-none', !isOpen);
+    modal.classList.toggle('opacity-0', !isOpen);
+    modal.classList.toggle('opacity-100', isOpen);
+    modal.setAttribute('aria-hidden', String(!isOpen));
+    syncPageScrollLock();
+  }
+
+  function changeQuantity(delta) {
+    if (currentProduct.quantity + delta >= 1) {
+      currentProduct.quantity += delta;
+      updateDrawerDisplay();
+    }
+  }
+
+  function toggleMobileModal() {
+    const modal = document.getElementById('mobileProductModal');
+    setModalOpen(modal, modal.classList.contains('pointer-events-none'));
+  }
+
+  function openProductDrawer(name, unitPrice, imageSrc, badge, desc) {
+    currentProduct.name = name;
+    currentProduct.unitPrice = unitPrice;
+    currentProduct.quantity = 1;
+    if (imageSrc) currentProduct.image = imageSrc;
+    if (badge) currentProduct.badge = badge;
+    if (desc) currentProduct.desc = desc;
+    updateDrawerDisplay();
+    setModalOpen(document.getElementById('mobileProductModal'), true);
+  }
+
+  function orderViaWhatsApp() {
+    const total = currentProduct.unitPrice * currentProduct.quantity;
+    const selectedCity = document.getElementById('deliveryCity').value;
+    const text = `Hi Huddle Bakery! I would like to order:\n- Item: ${currentProduct.name}\n- Quantity: ${currentProduct.quantity}\n- Total: Rs ${total.toLocaleString()}\n- Delivery Destination: ${selectedCity}`;
+    window.open(`https://wa.me/923417251879?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+  }
+
+  function openReelModal(title, caption, link, image, embedUrl) {
+    document.getElementById('reelModalTitle').textContent = title;
+    document.getElementById('reelModalCaption').textContent = caption;
+    document.getElementById('reelModalLink').href = link;
+    const iframe = document.getElementById('reelEmbed');
+    const spinner = document.getElementById('reelLoading');
+    iframe.style.opacity = '0';
+    spinner.classList.remove('hidden');
+    iframe.src = embedUrl;
+    setModalOpen(document.getElementById('reelModal'), true);
+  }
+
+  function toggleReelModal() {
+    const modal = document.getElementById('reelModal');
+    setModalOpen(modal, modal.classList.contains('pointer-events-none'));
+    if (modal.classList.contains('pointer-events-none')) {
+      const iframe = document.getElementById('reelEmbed');
+      iframe.removeAttribute('src');
+      iframe.style.opacity = '0';
+      document.getElementById('reelLoading').classList.remove('hidden');
+    }
+  }
+
+  function toggleMobileNav() {
+    const nav = document.getElementById('mobileNavDrawer');
+    const backdrop = document.getElementById('mobileNavBackdrop');
+    const trigger = document.querySelector('[aria-controls="mobileNavDrawer"]');
+    if (nav.classList.contains('is-open')) {
+      closeMobileNav();
+      return;
+    }
+    nav.classList.remove('hidden', 'is-closing');
+    backdrop.classList.remove('hidden');
+    requestAnimationFrame(() => nav.classList.add('is-open'));
+    requestAnimationFrame(() => backdrop.classList.replace('opacity-0', 'opacity-100'));
+    trigger.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeMobileNav() {
+    const nav = document.getElementById('mobileNavDrawer');
+    const backdrop = document.getElementById('mobileNavBackdrop');
+    const trigger = document.querySelector('[aria-controls="mobileNavDrawer"]');
+    if (!nav.classList.contains('is-open')) return;
+    nav.classList.remove('is-open');
+    nav.classList.add('is-closing');
+    backdrop.classList.replace('opacity-100', 'opacity-0');
+    trigger.setAttribute('aria-expanded', 'false');
+    window.setTimeout(() => {
+      nav.classList.add('hidden');
+      nav.classList.remove('is-closing');
+      backdrop.classList.add('hidden');
+    }, 310);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if ('IntersectionObserver' in window) {
+      revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+    }
+    setMenuTab('sundaes');
+    updateDrawerDisplay();
+    const yearElem = document.getElementById('currentYear');
+    if (yearElem) yearElem.textContent = new Date().getFullYear();
+
+    document.querySelectorAll('#menu h2, #reels h2, #why-huddle h2, #reviews h2').forEach(element => element.classList.add('reveal-up'));
+    document.querySelectorAll('#menu .text-center p, #reels > div > div:first-child p, #why-huddle > div > p, #reviews .text-center p').forEach(element => element.classList.add('reveal-fade'));
+    document.querySelectorAll('#reels .grid > div, #reviews .grid > div, #why-huddle .flex > div, #locations > span').forEach(element => element.classList.add('stagger-child', 'polished-card'));
+    observeReveals(document);
+    document.querySelectorAll('#reels .grid > div > .relative').forEach(card => {
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          card.click();
+        }
+      });
+    });
+
+    document.getElementById('reelEmbed').addEventListener('load', event => {
+      if (!event.currentTarget.getAttribute('src')) return;
+      event.currentTarget.style.opacity = '1';
+      document.getElementById('reelLoading').classList.add('hidden');
+    });
+    document.getElementById('mobileProductModal').addEventListener('click', event => {
+      if (event.target === event.currentTarget) setModalOpen(event.currentTarget, false);
+    });
+    document.getElementById('reelModal').addEventListener('click', event => {
+      if (event.target === event.currentTarget) toggleReelModal();
+    });
+    document.getElementById('mobileNavDrawer').addEventListener('click', event => {
+      if (event.target.closest('a')) closeMobileNav();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+      setModalOpen(document.getElementById('mobileProductModal'), false);
+      toggleReelModalIfOpen();
+      closeMobileNav();
+    });
+  });
+
+  function toggleReelModalIfOpen() {
+    const modal = document.getElementById('reelModal');
+    if (!modal.classList.contains('pointer-events-none')) toggleReelModal();
+  }
+</script>
+<!-- END: InteractiveScripts -->
+</body></html>
